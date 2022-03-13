@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.heightSmallSize {
+  height: var(--small-size);
+  font-size: 16px;
+}
+
+.heightMediumSize {
+  height: var(--medium-size);
+  font-size: 18px;
+}
+
+.heightLargeSize {
+  height: var(--large-size);
+  font-size: 20px;
+}
+
+.heightExtraLargeSize {
+  height: var(--extra-large-size);
+  font-size: 22px;
+}

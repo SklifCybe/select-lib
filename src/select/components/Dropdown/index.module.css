@@ -1,0 +1,14 @@
+.dropdown {
+  width: 100%;
+  max-height: var(--default-dropdown-height);
+  position: absolute;
+
+  background: var(--default-dropdown-background);
+  box-shadow: var(--dropdown-box-shadow);
+
+  overflow-y: auto;
+}
+
+.fullWidthDropdown {
+  width: fit-content;
+}

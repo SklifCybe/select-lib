@@ -1,0 +1,39 @@
+@import '../../vars.css';
+
+.component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--default-gap);
+  width: 100%;
+  padding: calc(var(--default-padding) * 2);
+
+  border-bottom: 1px solid var(--default-border-color);
+  border-top-left-radius: var(--default-border-radius);
+  border-top-right-radius: var(--default-border-radius);
+
+  background: var(--default-input-background);
+  color: var(--default-color);
+
+  transition: ease-in-out all 0.15s;
+}
+
+.component:hover {
+  background: var(--hover-input-background);
+  border-color: var(--hover-border-color);
+  fill: var(--hover-arrow-color);
+}
+
+.componentError {
+  border-bottom: 1px solid var(--error-color);
+}
+
+.subtitle {
+  color: var(--secondary-color);
+}
+
+.disabledInput {
+  cursor: not-allowed;
+  background: var(--hover-input-background);
+  fill: var(--hover-arrow-color);
+}

@@ -1,0 +1,14 @@
+@import '../../vars.css';
+
+.wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapperInline {
+  width: fit-content;
+}
+
+.wrapperBlock {
+  width: 100%;
+}

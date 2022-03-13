@@ -1,0 +1,28 @@
+:root {
+  --default-gap: 1rem;
+  --default-padding: 0.5rem;
+  --default-border-radius: 5px;
+  --default-dropdown-height: 250px;
+  --small-size: 48px;
+  --medium-size: 56px;
+  --large-size: 64px;
+  --extra-large-size: 72px;
+  --chrome-size-scrollbar: 14px;
+  --default-checkbox-width: 20px;
+
+  --default-input-background: rgb(238, 239, 241);
+  --default-dropdown-background: rgb(255, 255, 255);
+  --default-color: rgb(11, 31, 53);
+  --default-border-color: rgb(204, 204, 204);
+  --error-color: rgb(255, 0, 0);
+  --secondary-color: rgb(94, 107, 122);
+  --arrow-color: rgb(0, 0, 0);
+
+  --dropdown-box-shadow: 0 0 16px rgba(11, 31, 53, 0.08), 0 8px 16px rgba(11, 31, 53, 0.16);
+
+  --hover-input-background: rgb(219, 222, 225);
+  --hover-border-color: rgb(119, 119, 119);
+  --hover-arrow-color: rgb(74,89,105);
+
+  --arrow-reverse-time: 0.15s;
+}
