@@ -54,8 +54,8 @@ export type InputProps = {
 };
 
 export type SubInputProps = {
-  error: ErrorMessage;
-  hint: string;
+  error?: ErrorMessage;
+  hint?: string;
 };
 
 export type SelectContainerProps = {
