@@ -3,7 +3,7 @@ import cn from 'classnames';
 
 import { ArrowProps } from '@/select/typings';
 
-import { ReactComponent as ArrowIcon } from '@/select/assets/arrow-icon.svg';
+import { ReactComponent as ArrowIcon } from '../../assets/arrow-icon.svg';
 import styles from './index.module.css';
 
 const Arrow: FC<ArrowProps> = ({ visible, isDropdownOpen }) => {
@@ -11,7 +11,12 @@ const Arrow: FC<ArrowProps> = ({ visible, isDropdownOpen }) => {
     return null;
   }
 
-  return <ArrowIcon className={cn(isDropdownOpen ? styles.arrowUp : styles.arrowDown)} />;
+  return (
+    <ArrowIcon
+      className={cn(isDropdownOpen ? styles.arrowUp : styles.arrowDown)}
+      data-testid="arrow-icon"
+    />
+  );
 };
 
 export { Arrow };
