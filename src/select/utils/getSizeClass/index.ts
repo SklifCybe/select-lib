@@ -1,6 +1,6 @@
 import { Size } from '@/select/typings';
 
-enum Classes {
+export enum Classes {
   s = 'heightSmallSize',
   m = 'heightMediumSize',
   l = 'heightLargeSize',
