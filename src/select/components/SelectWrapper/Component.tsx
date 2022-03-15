@@ -11,7 +11,9 @@ const SelectWrapper = forwardRef<HTMLDivElement, SelectWrapperProps>((props, ref
   return (
     <div
       className={cn(styles.wrapper, block ? styles.wrapperBlock : styles.wrapperInline)}
-      ref={ref}>
+      ref={ref}
+      data-testid="select-wrapper"
+      >
       {children}
     </div>
   );
