@@ -1,11 +1,11 @@
 import React, { forwardRef } from 'react';
 import cn from 'classnames';
 
-import { SelectContainerProps } from '@/select/typings';
+import { SelectWrapperProps } from '@/select/typings';
 
 import styles from './index.module.css';
 
-const SelectContainer = forwardRef<HTMLDivElement, SelectContainerProps>((props, ref) => {
+const SelectWrapper = forwardRef<HTMLDivElement, SelectWrapperProps>((props, ref) => {
   const { children, block } = props;
 
   return (
@@ -17,4 +17,4 @@ const SelectContainer = forwardRef<HTMLDivElement, SelectContainerProps>((props,
   );
 });
 
-export { SelectContainer };
+export { SelectWrapper };

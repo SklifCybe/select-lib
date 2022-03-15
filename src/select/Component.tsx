@@ -1,6 +1,6 @@
 import React, { FC, useState, useEffect, useRef } from 'react';
 
-import { SelectContainer } from './components/SelectContainer';
+import { SelectWrapper } from './components/SelectWrapper';
 import { Dropdown } from './components/Dropdown';
 import { Input } from './components/Input';
 import { SubInput } from './components/SubInput';
@@ -82,7 +82,7 @@ const Select: FC<SelectProps> = ({
   };
 
   return (
-    <SelectContainer block={block} ref={wrapperRef}>
+    <SelectWrapper block={block} ref={wrapperRef}>
       <Input
         size={size}
         error={error}
@@ -103,7 +103,7 @@ const Select: FC<SelectProps> = ({
         optionListWidth={optionListWidth}
       />
       <SubInput error={error} hint={hint} />
-    </SelectContainer>
+    </SelectWrapper>
   );
 };
 

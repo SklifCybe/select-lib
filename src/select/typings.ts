@@ -58,7 +58,7 @@ export type SubInputProps = {
   hint?: string;
 };
 
-export type SelectContainerProps = {
+export type SelectWrapperProps = {
   block?: boolean;
   children: ReactNode;
 };
