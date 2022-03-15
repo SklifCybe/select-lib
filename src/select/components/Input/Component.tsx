@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import cn from 'classnames';
 
-import { Arrow } from '@/select/components/Arrow';
+import { Arrow } from '../Arrow';
 import { InputProps } from '@/select/typings';
-import { getSizeClass } from '@/select/utils/getSizeClass';
+import { getSizeClass } from '../../utils/getSizeClass';
 
 import styles from './index.module.css';
 
@@ -19,6 +19,7 @@ const Input: FC<InputProps> = ({
 }) => {
   return (
     <div
+      data-testid="input-wrapper"
       className={cn(
         styles.component,
         error && styles.componentError,

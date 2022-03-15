@@ -45,7 +45,7 @@ export type ArrowProps = {
 export type InputProps = {
   children: string | undefined;
   size: Size;
-  error: ErrorMessage;
+  error?: ErrorMessage;
   handleInputClick: () => void;
   visibleArrow: boolean;
   isDropdownOpen: boolean;
