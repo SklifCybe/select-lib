@@ -38,7 +38,6 @@ export const Dropdown: FC<DropdownProps> = ({
           onClick={onClick}
           activeKeys={activeKeys}
           size={size}
-          isFullWidth={isFullWidth}
           setHeight={setDropdownHeight}
         />
       ))}

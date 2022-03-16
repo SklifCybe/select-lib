@@ -11,7 +11,6 @@ export const DropdownItem: FC<DropdownItemProps> = ({
   onClick,
   activeKeys,
   size,
-  isFullWidth,
   setHeight,
 }) => {
   const itemRef = useRef<HTMLLIElement>(null);
@@ -31,7 +30,7 @@ export const DropdownItem: FC<DropdownItemProps> = ({
   return (
     <li
       ref={itemRef}
-      className={cn(styles.dropdownItem, getSizeClass(size), isFullWidth && styles.fullWidthItem)}
+      className={cn(styles.dropdownItem, getSizeClass(size))}
       onClick={handleClick}>
       <span className={styles.bull}>{activeCondition ? <>&bull;</> : <>&nbsp;</>}</span>
       <span className={styles.dropdownContent}>{option.content}</span>

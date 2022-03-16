@@ -3,6 +3,7 @@
 .dropdownItem {
   display: flex;
   align-items: center;
+  padding-right: var(--chrome-size-scrollbar);
 
   cursor: pointer;
 }
@@ -20,8 +21,4 @@
 .bull {
   width: var(--default-checkbox-width);
   padding: 0 var(--default-padding);
-}
-
-.fullWidthItem {
-  padding-right: var(--chrome-size-scrollbar);
 }

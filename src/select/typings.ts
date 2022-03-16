@@ -33,7 +33,6 @@ export type DropdownItemProps = {
   onClick: (option: OptionShape) => void;
   activeKeys: Array<Key>;
   size: Size;
-  isFullWidth: boolean;
   setHeight: (height: number) => void
 };
 
