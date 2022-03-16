@@ -6,7 +6,7 @@ import { getSizeClass } from '@/select/utils/getSizeClass';
 
 import styles from './index.module.css';
 
-const DropdownItem: FC<DropdownItemProps> = ({
+export const DropdownItem: FC<DropdownItemProps> = ({
   option,
   onClick,
   activeKeys,
@@ -38,5 +38,3 @@ const DropdownItem: FC<DropdownItemProps> = ({
     </li>
   );
 };
-
-export { DropdownItem };

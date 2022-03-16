@@ -6,7 +6,7 @@ import { ArrowProps } from '@/select/typings';
 import { ReactComponent as ArrowIcon } from '@/select/assets/arrow-icon.svg';
 import styles from './index.module.css';
 
-const Arrow: FC<ArrowProps> = ({ visible, isDropdownOpen }) => {
+export const Arrow: FC<ArrowProps> = ({ visible, isDropdownOpen }) => {
   if (!visible) {
     return null;
   }
@@ -18,5 +18,3 @@ const Arrow: FC<ArrowProps> = ({ visible, isDropdownOpen }) => {
     />
   );
 };
-
-export { Arrow };

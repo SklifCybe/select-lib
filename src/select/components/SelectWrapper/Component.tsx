@@ -5,7 +5,7 @@ import { SelectWrapperProps } from '@/select/typings';
 
 import styles from './index.module.css';
 
-const SelectWrapper = forwardRef<HTMLDivElement, SelectWrapperProps>((props, ref) => {
+export const SelectWrapper = forwardRef<HTMLDivElement, SelectWrapperProps>((props, ref) => {
   const { children, block } = props;
 
   return (
@@ -19,4 +19,3 @@ const SelectWrapper = forwardRef<HTMLDivElement, SelectWrapperProps>((props, ref
   );
 });
 
-export { SelectWrapper };

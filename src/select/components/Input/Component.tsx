@@ -7,7 +7,7 @@ import { InputProps } from '@/select/typings';
 
 import styles from './index.module.css';
 
-const Input: FC<InputProps> = ({
+export const Input: FC<InputProps> = ({
   children,
   size,
   error,
@@ -36,4 +36,3 @@ const Input: FC<InputProps> = ({
   );
 };
 
-export { Input };

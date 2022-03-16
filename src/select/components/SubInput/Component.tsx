@@ -5,7 +5,7 @@ import { SubInputProps } from '@/select/typings';
 
 import styles from './index.module.css';
 
-const SubInput: FC<SubInputProps> = ({ error, hint }) => {
+export const SubInput: FC<SubInputProps> = ({ error, hint }) => {
   if (!error && !hint) return null;
 
   const subInputClasses = cn({
@@ -15,5 +15,3 @@ const SubInput: FC<SubInputProps> = ({ error, hint }) => {
 
   return <span className={subInputClasses}>{error || hint}</span>;
 };
-
-export { SubInput };

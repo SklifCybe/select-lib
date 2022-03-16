@@ -6,7 +6,7 @@ import { DropdownProps } from '@/select/typings';
 
 import styles from './index.module.css';
 
-const Dropdown: FC<DropdownProps> = ({
+export const Dropdown: FC<DropdownProps> = ({
   options,
   onClick,
   visible,
@@ -45,5 +45,3 @@ const Dropdown: FC<DropdownProps> = ({
     </ul>
   );
 };
-
-export { Dropdown };

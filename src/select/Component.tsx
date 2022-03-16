@@ -9,7 +9,7 @@ import { SelectProps, OptionShape, Key } from './typings';
 
 import '@/styles/index.css';
 
-const Select: FC<SelectProps> = ({
+export const Select: FC<SelectProps> = ({
   options,
   placeholder,
   block = false,
@@ -106,5 +106,3 @@ const Select: FC<SelectProps> = ({
     </SelectWrapper>
   );
 };
-
-export { Select };
