@@ -13,6 +13,7 @@
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
     "classnames": "^2.3.1",
+    "cypress": "^9.5.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
@@ -22,7 +23,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sb": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
@@ -69,5 +70,10 @@
     "@storybook/testing-library": "^0.0.9",
     "chromatic": "^6.5.2",
     "webpack": "^5.70.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@/(.+)": "<rootDir>/src/$1"
+    }
   }
 }

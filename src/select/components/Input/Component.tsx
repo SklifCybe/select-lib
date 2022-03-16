@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import cn from 'classnames';
 
-import { Arrow } from '../Arrow';
+import { Arrow } from '@/select/components/Arrow';
+import { getSizeClass } from '@/select/utils/getSizeClass';
 import { InputProps } from '@/select/typings';
-import { getSizeClass } from '../../utils/getSizeClass';
 
 import styles from './index.module.css';
 
