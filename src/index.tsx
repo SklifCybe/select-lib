@@ -1,24 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
 
-import { Select } from './select/Component'
+import { Select } from './select';
 
 const options = [
-  { key: '1', content: 'HTML' },
-  { key: '2', content: 'CSS' },
-  { key: '3', content: 'JavaScript' },
-  { key: '4', content: 'TypeScript' },
-  { key: '5', content: 'React' },
-  { key: '6', content: 'Redux' },
-  { key: '7', content: 'MobX' },
-  { key: '8', content: 'NodeJS' },
-  { key: '9', content: 'Express' },
+  { key: '1', content: 'html' },
+  { key: '2', content: 'css' },
+  { key: '3', content: 'js' },
+  { key: '4', content: 'ts' },
+  { key: '5', content: 'deno' },
 ];
 
-const props = {
-  options,
-  placeholder: 'Select:',
-};
-
-
-ReactDOM.render(<Select {...props}/> , document.getElementById('root'))
+ReactDOM.render(
+  <Select options={options} placeholder="Select: " />,
+  document.getElementById('root'),
+);

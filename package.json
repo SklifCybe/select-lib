@@ -27,7 +27,9 @@
     "eject": "react-scripts eject",
     "sb": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token=c004ce8662aa"
+    "chromatic": "npx chromatic --project-token=c004ce8662aa",
+    "test:cypress": "start-server-and-test start http://localhost:3000 cypress",
+    "cypress": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -69,6 +71,7 @@
     "@storybook/react": "^6.4.19",
     "@storybook/testing-library": "^0.0.9",
     "chromatic": "^6.5.2",
+    "start-server-and-test": "^1.14.0",
     "webpack": "^5.70.0"
   },
   "jest": {
